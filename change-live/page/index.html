@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Main</title>
+
+    <!-- 외부 CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <!-- ===== Header ===== -->
+    <header>
+        <div class="container">
+            <div class="header-row">
+                <a class="brand" href="#">
+                    <div class="logo" aria-hidden="true"></div>
+                    <span>YOUR LOGO</span>
+                </a>
+
+                <nav class="desktop-nav" aria-label="메인 메뉴">
+                    <a href="#products">상품</a> 
+                    <a href="#about">소개</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">문의</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn" type="button">로그인</button>
+                    <button class="btn primary" type="button">시작하기</button>
+
+                    <button class="hamburger" type="button" aria-label="메뉴 열기" aria-controls="mobileDrawer"
+                        aria-expanded="false">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Mobile Drawer ===== -->
+    <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+
+    <aside class="drawer" id="mobileDrawer" aria-label="모바일 메뉴" role="dialog" aria-modal="true">
+        <div class="drawer-head">
+            <div class="brand" style="gap:8px;">
+                <div class="logo" aria-hidden="true"></div>
+                <b>YOUR LOGO</b>
+            </div>
+            <button class="btn" id="drawerCloseBtn" type="button" aria-label="메뉴 닫기">닫기</button>
+        </div>
+
+        <nav class="drawer-nav">
+            <a href="#products" data-drawer-link>상품</a>
+            <a href="#about" data-drawer-link>소개</a>
+            <a href="#faq" data-drawer-link>FAQ</a>
+            <a href="#contact" data-drawer-link>문의</a>
+        </nav>
+
+        <div class="drawer-foot">
+            <button class="btn" type="button" style="flex:1;">로그인</button>
+            <button class="btn primary" type="button" style="flex:1;">시작하기</button>
+        </div>
+    </aside>
+
+    <!-- ===== Main ===== -->
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-card">
+                        <h1>메인 타이틀 영역</h1>
+                        <p>간단한 한 줄 소개를 넣는 영역. 서비스/상품의 핵심 가치를 짧고 강하게 보여줘.</p>
+                        <div class="hero-cta">
+                            <a class="btn primary" href="#products">상품 보러가기</a>
+                            <a class="btn" href="#about">서비스 소개</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-side" aria-label="보조 정보">
+                        <div class="stat">
+                            <b>오늘의 추천</b>
+                            <span>모바일/데스크탑 모두 보기 좋게</span>
+                        </div>
+                        <div class="stat">
+                            <b>빠른 구매</b>
+                            <span>상품 카드에 CTA 배치 가능</span>
+                        </div>
+                        <div class="stat">
+                            <b>반응형 레이아웃</b>
+                            <span>960px / 640px 기준으로 재배치</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="section" id="products">
+            <div class="container">
+                <div class="section-title">
+                    <div>
+                        <h2>메인 상품 섹션</h2>
+                        <p>카드형 그리드(PC 4열 → 태블릿 2열 → 모바일 1열)</p>
+                    </div>
+                    <a class="btn" href="#">전체보기</a>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-body">
+                            <h3>상품명 01</h3>
+                            <p class="desc">상품 설명이 들어가는 자리. 두 줄까지만 보이도록 처리.</p>
+                            <div class="meta">
+                                <span class="badge best">BEST</span>
+                                <button class="btn primary" type="button">구매</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-body">
+                            <h3>상품명 02</h3>
+                            <p class="desc">상품 설명 텍스트. 카테고리/가격/혜택 등 표시 가능.</p>
+                            <div class="meta">
+                                <span class="badge new">NEW</span>
+                                <button class="btn primary" type="button">구매</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-body">
+                            <h3>상품명 03</h3>
+                            <p class="desc">이미지 썸네일 영역을 실제 이미지로 교체하면 됨.</p>
+                            <div class="meta">
+                                <span class="badge pick">추천</span>
+                                <button class="btn primary" type="button">구매</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-body">
+                            <h3>상품명 04</h3>
+                            <p class="desc">상품 설명. 필요하면 별점/리뷰수 같은 메타도 추가.</p>
+                            <div class="meta">
+                                <span class="badge hot">HOT</span>
+                                <button class="btn primary" type="button">구매</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-title">
+                    <div>
+                        <h2>소개</h2>
+                        <p>여기는 소개 섹션 자리(필요 시 삭제/확장)</p>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <p style="margin:0;color:rgba(0,0,0,.65);line-height:1.7;">소개/신뢰 요소/사용 방법 등을 배치하면 좋아.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section-title">
+                    <div>
+                        <h2>FAQ</h2>
+                        <p>자주 묻는 질문 섹션 자리</p>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <p style="margin:0;color:rgba(0,0,0,.65);line-height:1.7;">질문/답변 아코디언 UI를 붙이기 쉬운 구조야.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <div>
+                        <h2>문의</h2>
+                        <p>연락처/폼/이메일 등을 배치</p>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <p style="margin:0;color:rgba(0,0,0,.65);line-height:1.7;">contact@example.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>YOUR LOGO</h4>
+                    <p>짧은 회사/서비스 소개 문구</p>
+                    <p class="copyright">© 2025 Your Company. All rights reserved.</p>
+                </div>
+                <div>
+                    <h4>메뉴</h4>
+                    <p><a href="#products">상품</a></p>
+                    <p><a href="#about">소개</a></p>
+                    <p><a href="#faq">FAQ</a></p>
+                </div>
+                <div>
+                    <h4>정책</h4>
+                    <p><a href="#">이용약관</a></p>
+                    <p><a href="#">개인정보처리방침</a></p>
+                    <p><a href="#">환불정책</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const drawer = document.getElementById("mobileDrawer");
+        const backdrop = document.getElementById("drawerBackdrop");
+        const closeBtn = document.getElementById("drawerCloseBtn");
+        const drawerLinks = document.querySelectorAll("[data-drawer-link]");
+
+        function openDrawer() {
+            drawer.classList.add("open");
+            backdrop.classList.add("open");
+            document.body.classList.add("lock-scroll");
+            hamburger?.setAttribute("aria-expanded", "true");
+        }
+        function closeDrawer() {
+            drawer.classList.remove("open");
+            backdrop.classList.remove("open");
+            document.body.classList.remove("lock-scroll");
+            hamburger?.setAttribute("aria-expanded", "false");
+        }
+
+        hamburger?.addEventListener("click", openDrawer);
+        backdrop?.addEventListener("click", closeDrawer);
+        closeBtn?.addEventListener("click", closeDrawer);
+        drawerLinks.forEach(a => a.addEventListener("click", closeDrawer));
+
+        window.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeDrawer();
+        });
+    </script>
+</body>
+
+</html>
